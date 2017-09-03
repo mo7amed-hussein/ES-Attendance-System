@@ -38,6 +38,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../uart/softuart.c \
 ../uart/usart0.c
 
 
@@ -48,15 +49,19 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+uart/softuart.o \
 uart/usart0.o
 
 OBJS_AS_ARGS +=  \
+uart/softuart.o \
 uart/usart0.o
 
 C_DEPS +=  \
+uart/softuart.d \
 uart/usart0.d
 
 C_DEPS_AS_ARGS +=  \
+uart/softuart.d \
 uart/usart0.d
 
 OUTPUT_FILE_PATH +=libdrivers.a
@@ -73,6 +78,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

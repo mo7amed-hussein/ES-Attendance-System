@@ -41,6 +41,12 @@
     <Folder Include="uart" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="uart\softuart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="uart\softuart.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="uart\usart0.c">
       <SubType>compile</SubType>
     </Compile>
