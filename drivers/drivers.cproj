@@ -38,6 +38,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="ultrasonic" />
     <Folder Include="uart" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart\usart0.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ultrasonic\ultrasonic.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ultrasonic\ultrasonic.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
