@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "drivers", "drivers\drivers.cproj", "{46FF2FA8-C404-4127-9D2D-BD70A02F6E1B}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "drivers-tests", "drivers-tests\drivers-tests.cproj", "{BA8250AB-234E-4E92-85ED-510E833E602F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46FF2FA8-C404-4127-9D2D-BD70A02F6E1B}.Debug|AVR.ActiveCfg = Debug|AVR
+		{46FF2FA8-C404-4127-9D2D-BD70A02F6E1B}.Debug|AVR.Build.0 = Debug|AVR
+		{46FF2FA8-C404-4127-9D2D-BD70A02F6E1B}.Release|AVR.ActiveCfg = Release|AVR
+		{46FF2FA8-C404-4127-9D2D-BD70A02F6E1B}.Release|AVR.Build.0 = Release|AVR
+		{BA8250AB-234E-4E92-85ED-510E833E602F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BA8250AB-234E-4E92-85ED-510E833E602F}.Debug|AVR.Build.0 = Debug|AVR
+		{BA8250AB-234E-4E92-85ED-510E833E602F}.Release|AVR.ActiveCfg = Release|AVR
+		{BA8250AB-234E-4E92-85ED-510E833E602F}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
