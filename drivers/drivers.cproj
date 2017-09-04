@@ -38,6 +38,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="wifi" />
     <Folder Include="ultrasonic" />
     <Folder Include="uart" />
   </ItemGroup>
@@ -58,6 +59,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="ultrasonic\ultrasonic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="wifi\wifi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="wifi\wifi.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

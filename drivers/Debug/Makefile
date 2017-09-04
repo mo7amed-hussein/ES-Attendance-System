@@ -33,6 +33,7 @@ LINKER_SCRIPT_DEP:=
 
 # Every subdirectory with source files must be described here
 SUBDIRS :=  \
+../wifi \
 ../ultrasonic \
 ../uart
 
@@ -41,7 +42,8 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../uart/softuart.c \
 ../uart/usart0.c \
-../ultrasonic/ultrasonic.c
+../ultrasonic/ultrasonic.c \
+../wifi/wifi.c
 
 
 PREPROCESSING_SRCS += 
@@ -53,22 +55,26 @@ ASM_SRCS +=
 OBJS +=  \
 uart/softuart.o \
 uart/usart0.o \
-ultrasonic/ultrasonic.o
+ultrasonic/ultrasonic.o \
+wifi/wifi.o
 
 OBJS_AS_ARGS +=  \
 uart/softuart.o \
 uart/usart0.o \
-ultrasonic/ultrasonic.o
+ultrasonic/ultrasonic.o \
+wifi/wifi.o
 
 C_DEPS +=  \
 uart/softuart.d \
 uart/usart0.d \
-ultrasonic/ultrasonic.d
+ultrasonic/ultrasonic.d \
+wifi/wifi.d
 
 C_DEPS_AS_ARGS +=  \
 uart/softuart.d \
 uart/usart0.d \
-ultrasonic/ultrasonic.d
+ultrasonic/ultrasonic.d \
+wifi/wifi.d
 
 OUTPUT_FILE_PATH +=libdrivers.a
 
@@ -91,6 +97,8 @@ LINKER_SCRIPT_DEP+=
 
 
 
+
+
 uart/%.o: ../uart/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.3.3
@@ -99,6 +107,13 @@ uart/%.o: ../uart/%.c
 	
 
 ultrasonic/%.o: ../ultrasonic/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 4.3.3
+	$(QUOTE)E:\WinAVR-20100110\bin\avr-gcc.exe$(QUOTE)  -x c -O0 -ffunction-sections -fdata-sections -mmcu=atmega328p -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+wifi/%.o: ../wifi/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.3.3
 	$(QUOTE)E:\WinAVR-20100110\bin\avr-gcc.exe$(QUOTE)  -x c -O0 -ffunction-sections -fdata-sections -mmcu=atmega328p -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

@@ -1,6 +1,6 @@
 #include "usart0.h"
 #include <avr/io.h>
-
+#include <util/delay.h>
 void initUsart0(unsigned short baudrate)
 {
 	
@@ -12,8 +12,11 @@ void initUsart0(unsigned short baudrate)
 	//set frame format : async , no parity , 8 bit size , 1 stop bit
 	UCSR0C = (0<<UMSEL00)|(0<<UPM01)|(0<<UPM00)|(0<<USBS0)|(3<<UCSZ00);
 	//UCSR0C = (1<<USBS0)|(3<<UCSZ00);
+	//enable interrupt on recieve
+	UCSR0B |=(1 << RXCIE0);
 	//config for transmit and recieve	
-	UCSR0B = (1<<RXEN0)|(1<<TXEN0);
+	UCSR0B |= (1<<RXEN0)|(1<<TXEN0);
+	
 }
 
 void putcUsart0(unsigned char data)
