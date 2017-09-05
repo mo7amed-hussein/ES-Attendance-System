@@ -13,6 +13,7 @@
 #include "uart/softuart.h"
 #include "wifi/wifi.h"
 #include "ultrasonic/ultrasonic.h"
+#include "dualultrasonic/dualultrasonic.h"
 #include <stdio.h>
 #include <string.h>
 #define F_CPU 8000000UL
@@ -21,16 +22,18 @@ extern unsigned char wifiBuffer[WIFI_BUFFER_SIZE];
 unsigned char tmp[WIFI_BUFFER_SIZE];
 unsigned char tmp2[WIFI_BUFFER_SIZE];
 volatile short counter =0;
+volatile unsigned short left =20;
+volatile unsigned short right =30;
 volatile unsigned char data='0';
 int main(void)
 {
 	sei();
-	initUsart0(9600);
-	initUltraSonic();
+	//initUsart0(9600);
+	//initUltraSonic();
 	
 	softuart_init();
 	
-	
+	initDualUltraSonic();
 	
 	//softuart_puts("ultrasonnic test start\n");
 	//softuart_puts("ultrasonic initialized\n");
@@ -141,17 +144,18 @@ int main(void)
 		//putcUsart0('\n');
 		//putsUsart0("AT\r\n");
 		//softuart_puts("read distance\n");
-		_delay_ms(1000);
-		counter = readDistance();
+		_delay_ms(200);
+		//counter = readDistance();
+		readDistances(&left,&right);
 		//softuart_puts("read distance done\n");
-		_delay_ms(1000);
-		sprintf(tmp,"distance is %d \n\0",counter);
-		putsUsart0(tmp);
+		//_delay_ms(1000);
+		sprintf(tmp,"left :%d  , right : %d \n\0",left,right);
+		softuart_puts(tmp);
 		//softuart_puts(tmp);
 		PORTB |= (1<<PB1);
-		_delay_ms(1000);
+		_delay_ms(500);
 		PORTB &= ~(1<<PB1);
-		_delay_ms(1000);
+		_delay_ms(500);
 		//softuart_putchar(data);
 		//PORTC=0x00;
 		//_delay_ms(500);

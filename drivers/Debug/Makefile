@@ -33,6 +33,7 @@ LINKER_SCRIPT_DEP:=
 
 # Every subdirectory with source files must be described here
 SUBDIRS :=  \
+../dualultrasonic \
 ../wifi \
 ../ultrasonic \
 ../uart
@@ -40,6 +41,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../dualultrasonic/dualultrasonic.c \
 ../uart/softuart.c \
 ../uart/usart0.c \
 ../ultrasonic/ultrasonic.c \
@@ -53,24 +55,28 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+dualultrasonic/dualultrasonic.o \
 uart/softuart.o \
 uart/usart0.o \
 ultrasonic/ultrasonic.o \
 wifi/wifi.o
 
 OBJS_AS_ARGS +=  \
+dualultrasonic/dualultrasonic.o \
 uart/softuart.o \
 uart/usart0.o \
 ultrasonic/ultrasonic.o \
 wifi/wifi.o
 
 C_DEPS +=  \
+dualultrasonic/dualultrasonic.d \
 uart/softuart.d \
 uart/usart0.d \
 ultrasonic/ultrasonic.d \
 wifi/wifi.d
 
 C_DEPS_AS_ARGS +=  \
+dualultrasonic/dualultrasonic.d \
 uart/softuart.d \
 uart/usart0.d \
 ultrasonic/ultrasonic.d \
@@ -98,6 +104,15 @@ LINKER_SCRIPT_DEP+=
 
 
 
+
+
+
+dualultrasonic/%.o: ../dualultrasonic/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 4.3.3
+	$(QUOTE)E:\WinAVR-20100110\bin\avr-gcc.exe$(QUOTE)  -x c -O0 -ffunction-sections -fdata-sections -mmcu=atmega328p -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
 
 uart/%.o: ../uart/%.c
 	@echo Building file: $<

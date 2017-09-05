@@ -38,11 +38,18 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="dualultrasonic" />
     <Folder Include="wifi" />
     <Folder Include="ultrasonic" />
     <Folder Include="uart" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dualultrasonic\dualultrasonic.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="dualultrasonic\dualultrasonic.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="uart\softuart.c">
       <SubType>compile</SubType>
     </Compile>
