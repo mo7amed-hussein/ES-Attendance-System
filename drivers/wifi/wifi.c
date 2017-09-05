@@ -11,7 +11,6 @@ unsigned char wifi_response_noAP[]="noAP";
 unsigned char wifi_response_ALRY_CONN[]="ALREADY CONNECT";
 unsigned char wifi_response_CONN[]="CONNECT";
 unsigned char wifi_ping_timeout[]="+";
-unsigned char tmp[20];
 //wifi variables 
 unsigned char wifiBuffer[WIFI_BUFFER_SIZE];
 wifiError _wifiError= NOERROR ;

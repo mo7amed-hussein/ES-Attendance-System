@@ -3,18 +3,15 @@
 #include <avr/io.h>
 
 
-#define TRIGGER_PIN  PD7
-#define ECHO_PIN  PD6
+#define TRIGGER_PIN  PIND3
+#define ECHO_PIN  PIND4
 
-#define ULTRA_PORT PORTD
-#define ULTRA_PORT_DDR DDRD
-#define ULTRA_PORT_PIN PIND
+#define US_PORT PORTD
+#define US_PORT_DDR DDRD
+#define US_PORT_PIN PIND
 
-void initUltraSonic();
-void triggerUltraSonic();
-void echoUltraSonic();
-void startTimer();
-void stopTimer();
+void initUltraSonic(void);
+unsigned short readDistance(void);
 
 
 

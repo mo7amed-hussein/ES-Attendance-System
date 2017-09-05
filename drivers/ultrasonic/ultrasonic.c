@@ -1,50 +1,49 @@
-#include "ultrasonic.h"
-#include "../uart/softuart.h"
-#include <avr/io.h>
-#include <util/delay.h>
+/*
+* Ultrasonic.c
+*
+* Created: 28/08/2016 05:07:31 ã
+*  Author: tofaa
+*/
+#include "Ultrasonic.h"
 #include <avr/interrupt.h>
-void initUltraSonic()
-{
-	//set trigger , ground pins as outputs
-	ULTRA_PORT_DDR |= (1<<TRIGGER_PIN)| (0<<ECHO_PIN);
-	//set echo pin as input
-	//ULTRA_PORT_DDR &=  ~(1<<ECHO_PIN);
-	//set ground pin equal 0
-	//ULTRA_PORT &= ~(1<<GND_PIN);
-	ULTRA_PORT_PIN |= (1<<ECHO_PIN);
-}
+#include <util/delay.h>
 
-void triggerUltraSonic()
-{
-	softuart_puts("output hight to trigger\n");
-	ULTRA_PORT &= ~(1<<TRIGGER_PIN);
-	_delay_us(2);
-	ULTRA_PORT |= (1<<TRIGGER_PIN);
+volatile unsigned short overflows = 0;
+
+void initUltraSonic(void){
+	/* init io */
+	US_PORT_DDR |=  (1<<TRIGGER_PIN); /* TRIG */
+	US_PORT		&= ~(1<<TRIGGER_PIN); /* TRIG */
+	US_PORT_DDR &= ~(1<<ECHO_PIN); /* ECHO */
+	US_PORT		&= ~(1<<ECHO_PIN); /* ECHO */
+	
+	/* init timer0 */
+	
+	TCCR1B |= (1<<CS11); /* 1/8 Prescaler */
+	TIMSK1 |= (1<<TOIE1); /* Enable Overflow Int */
+	sei();				/* Enable Global interrupt */
+}
+unsigned short readDistance(void){
+	unsigned short pulse_width = 0,distance = 0;
+	/* Send Trigger */
+	US_PORT |= (1<<TRIGGER_PIN);
 	_delay_us(10);
-	ULTRA_PORT &= ~(1<<TRIGGER_PIN);
-	softuart_puts("output low to trigger\n");
+	US_PORT &= ~(1<<TRIGGER_PIN);
+	/* Measure Pulse Width */
+	while(!(US_PORT_PIN & (1<<ECHO_PIN))); /* Wait for rising edge */
+	TCNT1 = 0;
+	overflows = 0;
+	while((US_PORT_PIN & (1<<ECHO_PIN)))/* Wait for falling edge */
+	{
+		if (overflows ==1) // maximum is 23 cm
+		{
+			break;
+		}
+	}
+	pulse_width = TCNT1 + overflows*65535; /* Calc, Pulse Width in us */
+	distance = (pulse_width/29.1)/2; /* distance in cm */
+	return distance;
 }
-
-void echoUltraSonic()
-{
-	softuart_puts("wait for echo to go high\n");
-	while(!(ULTRA_PORT_PIN & (1<<ECHO_PIN)));
-	startTimer();
-	softuart_puts("wait for echo to go low\n");
-	while((ULTRA_PORT_PIN & (1<<ECHO_PIN)));
-	softuart_puts("echo went low\n");
-	stopTimer();
-}
-
-void startTimer()
-{	
-	TCCR0A|=(1<<CS01);			//clkI/8
-	TIMSK0|=(1<<TOIE0);			//enable timer0
-	TCNT0=0;					//zero timer0
-	sei();						//open global interrupt
-}
-
-void stopTimer()
-{
-	TCCR0A &= ~(0<<CS01);			//stop timer
+ISR(TIMER1_OVF_vect){
+	overflows++;
 }

@@ -25,12 +25,24 @@ volatile unsigned char data='0';
 int main(void)
 {
 	sei();
-	//initUsart0(9600);
+	initUsart0(9600);
+	initUltraSonic();
+	
 	softuart_init();
-	softuart_puts("wifi test start\n");
-	softuart_puts("intialize wifi\n");
+	
+	
+	
+	//softuart_puts("ultrasonnic test start\n");
+	//softuart_puts("ultrasonic initialized\n");
+	
 	//strcpy(wifiBuffer,"\0");
 	
+	/************************************************************************/
+	/* wifi tests                                                                     */
+	/************************************************************************/
+	/*
+	softuart_puts("wifi test start\n");
+	softuart_puts("intialize wifi\n");
 	if(initWifi()==False)
 	{
 		softuart_puts("wifi intialization error\n");
@@ -49,16 +61,6 @@ int main(void)
 		softuart_puts(wifiBuffer);
 		return 1;
 	}
-	//_delay_ms(1000);
-	//softuart_puts("connecting to host\n");
-	//if(connectHost()==False)
-	//{
-	//softuart_puts("host connection error\n");
-	//_delay_ms(1000);
-	//softuart_puts(getLastError());
-	//_delay_ms(1000);
-	//return 1;
-	//}
 	softuart_puts("check Internet connection\n");
 	if(checkInternet()==False)
 	{
@@ -71,7 +73,7 @@ int main(void)
 	
 	
 	softuart_puts("update data\n");
-	if(updateData(120)==False)
+	if(updateData(65)==False)
 	{
 		softuart_puts("data update error\n");
 		_delay_ms(1000);
@@ -79,6 +81,7 @@ int main(void)
 		_delay_ms(1000);
 		return 1;
 	}
+	*/
 	//softuart_puts(wifiBuffer);
 	DDRB |= (1<<PB1);
 	
@@ -102,7 +105,7 @@ int main(void)
 	//softuart_puts("response");
 	//softuart_putchar(ch);
 	//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-	
+	//putsUsart0("start test \n");
 	char str[10];
 	while(1)
 	{
@@ -137,6 +140,14 @@ int main(void)
 		//putcUsart0('A');
 		//putcUsart0('\n');
 		//putsUsart0("AT\r\n");
+		//softuart_puts("read distance\n");
+		_delay_ms(1000);
+		counter = readDistance();
+		//softuart_puts("read distance done\n");
+		_delay_ms(1000);
+		sprintf(tmp,"distance is %d \n\0",counter);
+		putsUsart0(tmp);
+		//softuart_puts(tmp);
 		PORTB |= (1<<PB1);
 		_delay_ms(1000);
 		PORTB &= ~(1<<PB1);
@@ -148,11 +159,6 @@ int main(void)
 	}
 }
 
-
-ISR(TIMER0_OVF_vect)
-{
-	counter++;
-}
 
 ISR(USART_RX_vect)
 {

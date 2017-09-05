@@ -2,7 +2,7 @@
 #define _WIFI_
 
 #define ESP_BAUDE_RATE 9600 //wifi baudrate
-#define RESPONSE_DELAY  500 //delay for wifi response
+#define RESPONSE_DELAY  1000 //delay for wifi response
 #define WIFI_BUFFER_SIZE 100 // wifi buffer size
 #define API_KEY "FNHJRVJKF2O0IJ4S"
 //wifi errors constants
