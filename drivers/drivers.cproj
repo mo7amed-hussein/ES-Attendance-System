@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="dualultrasonic" />
+    <Folder Include="spi" />
     <Folder Include="wifi" />
     <Folder Include="ultrasonic" />
     <Folder Include="uart" />
@@ -48,6 +49,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="dualultrasonic\dualultrasonic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spi\spi.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart\softuart.c">

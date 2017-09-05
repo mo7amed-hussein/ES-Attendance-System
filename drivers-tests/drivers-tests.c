@@ -14,6 +14,7 @@
 #include "wifi/wifi.h"
 #include "ultrasonic/ultrasonic.h"
 #include "dualultrasonic/dualultrasonic.h"
+#include "spi/spi.h"
 #include <stdio.h>
 #include <string.h>
 #define F_CPU 8000000UL
@@ -33,8 +34,10 @@ int main(void)
 	
 	softuart_init();
 	
-	initDualUltraSonic();
+	//initDualUltraSonic();
 	
+	//initSpiSlave();
+	initSpiMaster();
 	//softuart_puts("ultrasonnic test start\n");
 	//softuart_puts("ultrasonic initialized\n");
 	
@@ -110,6 +113,8 @@ int main(void)
 	//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 	//putsUsart0("start test \n");
 	char str[10];
+	//softuart_puts("test dual ultra sonic");
+	softuart_puts("spi test start\n");
 	while(1)
 	{
 		/* usart0 tests */
@@ -144,14 +149,22 @@ int main(void)
 		//putcUsart0('\n');
 		//putsUsart0("AT\r\n");
 		//softuart_puts("read distance\n");
-		_delay_ms(200);
+		_delay_ms(2000);
 		//counter = readDistance();
-		readDistances(&left,&right);
-		//softuart_puts("read distance done\n");
-		//_delay_ms(1000);
-		sprintf(tmp,"left :%d  , right : %d \n\0",left,right);
-		softuart_puts(tmp);
+		//readDistances(&left,&right);
+		////softuart_puts("read distance done\n");
+		////_delay_ms(1000);
+		//sprintf(tmp,"left :%d  , right : %d \n\0",left,right);
 		//softuart_puts(tmp);
+		//softuart_puts(tmp);
+		/************************************************************************/
+		/* spi tests                                                             */
+		/************************************************************************/
+		tranceiveSpi(data);
+		//softuart_puts("received data is ");
+		softuart_putchar(data);
+		softuart_putchar('\n');
+		data++;
 		PORTB |= (1<<PB1);
 		_delay_ms(500);
 		PORTB &= ~(1<<PB1);
