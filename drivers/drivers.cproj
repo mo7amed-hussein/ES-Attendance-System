@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="dualultrasonic" />
+    <Folder Include="pir" />
     <Folder Include="rfid" />
     <Folder Include="spi" />
     <Folder Include="wifi" />
@@ -50,6 +51,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="dualultrasonic\dualultrasonic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pir\pir.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pir\pir.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="rfid\rfid.c">

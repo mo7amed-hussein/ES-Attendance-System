@@ -16,6 +16,7 @@
 #include "dualultrasonic/dualultrasonic.h"
 #include "spi/spi.h"
 #include "rfid/rfid.h"
+#include "pir/pir.h"
 //#include "rfid/MFRC522.h"
 #include <stdio.h>
 #include <string.h>
@@ -43,6 +44,9 @@ int main(void)
 	//_delay_ms(100);
 	//init rfid
 	initRfid();
+	_delay_ms(200);
+	initPir();
+	_delay_ms(1000);
 	//MFRC522();
 	//_delay_ms(100);
 	//begin rfid
@@ -52,7 +56,8 @@ int main(void)
 	if(!ver)
 	{
 		putsUsart0("Didn't find MFRC522 board.");
-		return;
+		//return;
+		while(1);
 	}
 	
 	putsUsart0("Found chip MFRC522\n");
