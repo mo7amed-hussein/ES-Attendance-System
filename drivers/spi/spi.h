@@ -14,6 +14,7 @@
 #define SPI_MISO_PIN  PINB4
 #define SPI_SCK_PIN  PINB5
 #define SPI_SS_PIN  PINB2
+#define SPI_PORT PORTB
 #define ACK 0x7E
 void initSpiMaster();
 

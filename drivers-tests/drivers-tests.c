@@ -15,6 +15,8 @@
 #include "ultrasonic/ultrasonic.h"
 #include "dualultrasonic/dualultrasonic.h"
 #include "spi/spi.h"
+#include "rfid/rfid.h"
+//#include "rfid/MFRC522.h"
 #include <stdio.h>
 #include <string.h>
 #define F_CPU 8000000UL
@@ -25,21 +27,47 @@ unsigned char tmp2[WIFI_BUFFER_SIZE];
 volatile short counter =0;
 volatile unsigned short left =20;
 volatile unsigned short right =30;
-volatile unsigned char data='0';
+//volatile unsigned char data='0';
+
+unsigned char *serials[] = {"12.4C.6E.8B","FF.FF.FF.FF.FF"};
+uint8_t serialsCount =2;
+unsigned char tmpSerial [12];	
 int main(void)
 {
+	
 	sei();
-	//initUsart0(9600);
-	//initUltraSonic();
+	//init uart
+	initUsart0(9600);
+	//init spi
+	//initSpiMaster();
+	//_delay_ms(100);
+	//init rfid
+	initRfid();
+	//MFRC522();
+	//_delay_ms(100);
+	//begin rfid
+	//begin();
+	//uint8_t ver = getFirmwareVersion();
+	uint8_t ver = getFirmwareVer();
+	if(!ver)
+	{
+		putsUsart0("Didn't find MFRC522 board.");
+		return;
+	}
 	
-	softuart_init();
+	putsUsart0("Found chip MFRC522\n");
+	putsUsart0("firmware version is ");
+	sprintf(tmp,"%X \n\0",ver);
+	putsUsart0(tmp);
 	
-	//initDualUltraSonic();
+	DDRB |= (1<<PB0);
+	//if(digitalSelfTestPass()==False)
+	//{
+		//putsUsart0("rfid chip test failed \n");
+		//return;
+	//}
+	//putsUsart0("rfid chip test passes \n");
 	
-	//initSpiSlave();
-	initSpiMaster();
-	//softuart_puts("ultrasonnic test start\n");
-	//softuart_puts("ultrasonic initialized\n");
 	
 	//strcpy(wifiBuffer,"\0");
 	
@@ -89,7 +117,7 @@ int main(void)
 	}
 	*/
 	//softuart_puts(wifiBuffer);
-	DDRB |= (1<<PB1);
+	//DDRB |= (1<<PB0);
 	
 	
 	//DDRC |= (1<<5);
@@ -114,9 +142,14 @@ int main(void)
 	//putsUsart0("start test \n");
 	char str[10];
 	//softuart_puts("test dual ultra sonic");
-	softuart_puts("spi test start\n");
+	//softuart_puts("spi test start\n");
 	while(1)
 	{
+		
+		uint8_t status;
+		uint8_t data[MAX_LEN];
+		uint8_t serial[5];
+		//uint8_t d[MAX_LEN];
 		/* usart0 tests */
 		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		//putcUsart0('a');
@@ -149,7 +182,7 @@ int main(void)
 		//putcUsart0('\n');
 		//putsUsart0("AT\r\n");
 		//softuart_puts("read distance\n");
-		_delay_ms(2000);
+		//_delay_ms(1000);
 		//counter = readDistance();
 		//readDistances(&left,&right);
 		////softuart_puts("read distance done\n");
@@ -160,15 +193,48 @@ int main(void)
 		/************************************************************************/
 		/* spi tests                                                             */
 		/************************************************************************/
-		tranceiveSpi(data);
-		//softuart_puts("received data is ");
-		softuart_putchar(data);
-		softuart_putchar('\n');
-		data++;
-		PORTB |= (1<<PB1);
-		_delay_ms(500);
-		PORTB &= ~(1<<PB1);
-		_delay_ms(500);
+		//SPI_PORT &= ~(1<<SPI_SS_PIN);
+		//tranceiveSpi(data);
+		//SPI_PORT |= (1<<SPI_SS_PIN);
+		//softuart_puts("sent data is ");
+		//softuart_putchar(data);
+		//sprintf(tmp,"sent data %0x \n\0",data);
+		//softuart_putchar('\n');
+		//softuart_puts(tmp);
+		
+		putsUsart0("scannnig for tags ... \n");
+		//status = requestTag(MF1_REQIDL, data);
+		status = scanForTag(MF1_REQIDL, data);
+		if(status == MI_OK )
+		{
+			putsUsart0("tag detected \n");
+			sprintf(tmp,"type %X , %X \n\0",data[0],data[1]);
+			putsUsart0(tmp);
+			status = antiCollision(data);
+			memcpy(serial, data, 5);
+//
+			putsUsart0("The serial nb of the tag is:");
+			//for (int i = 0; i < 4; i++) {
+				//sprintf(tmp,"%X , \0",serial[i]);
+				//putsUsart0(tmp);
+			//}
+			dumpSerial(serial,4,tmpSerial);
+			putsUsart0(tmpSerial);
+			for(int i = 0 ;i<serialsCount;i++)
+			{
+				if(strcmp(tmpSerial,serials[i])==0)
+				{
+					putsUsart0("\nauthenticated user\n");
+				}
+			}
+			haltTag();
+		}
+		
+		//data++;
+		PORTB |= (1<<PB0);
+		_delay_ms(1000);
+		PORTB &= ~(1<<PB0);
+		_delay_ms(1000);
 		//softuart_putchar(data);
 		//PORTC=0x00;
 		//_delay_ms(500);
