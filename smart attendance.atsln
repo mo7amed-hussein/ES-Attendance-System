@@ -5,6 +5,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "drivers", "drivers\drivers.
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "drivers-tests", "drivers-tests\drivers-tests.cproj", "{BA8250AB-234E-4E92-85ED-510E833E602F}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "pir test", "tests\pir test\pir test.cproj", "{1C1ABB16-7F06-4484-B317-D1C6C7BEAABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -19,6 +21,10 @@ Global
 		{BA8250AB-234E-4E92-85ED-510E833E602F}.Debug|AVR.Build.0 = Debug|AVR
 		{BA8250AB-234E-4E92-85ED-510E833E602F}.Release|AVR.ActiveCfg = Release|AVR
 		{BA8250AB-234E-4E92-85ED-510E833E602F}.Release|AVR.Build.0 = Release|AVR
+		{1C1ABB16-7F06-4484-B317-D1C6C7BEAABE}.Debug|AVR.ActiveCfg = Debug|AVR
+		{1C1ABB16-7F06-4484-B317-D1C6C7BEAABE}.Debug|AVR.Build.0 = Debug|AVR
+		{1C1ABB16-7F06-4484-B317-D1C6C7BEAABE}.Release|AVR.ActiveCfg = Release|AVR
+		{1C1ABB16-7F06-4484-B317-D1C6C7BEAABE}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
