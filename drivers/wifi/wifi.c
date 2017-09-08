@@ -211,20 +211,20 @@ boolean updateData(unsigned short field)
 	//_delay_ms(500);
 	//softuart_puts(tmp);
 	//_delay_ms(500);
-	softuart_puts("connecting to host\n");
+	//softuart_puts("connecting to host\n");
 	//_delay_ms(RESPONSE_DELAY);
 	if(connectHost()==False)
 	{
 		return False;
 	}
 	
-	softuart_puts("init send data\n");
+	//softuart_puts("init send data\n");
 	//_delay_ms(RESPONSE_DELAY);
 	if(initDataSend(strlen(command))==False)
 	{
 		return False;
 	}
-	softuart_puts("send data\n");
+	//softuart_puts("send data\n");
 	//_delay_ms(RESPONSE_DELAY);
 	flushBuffer(wifiBuffer);
 	
@@ -253,7 +253,7 @@ boolean checkInternet(void)
 	_delay_ms(RESPONSE_DELAY);
 	if(strstr(wifiBuffer,wifi_ping_timeout))
 	{
-		softuart_puts("host connected>>\n");
+		//softuart_puts("host connected>>\n");
 		_wifiError = NOERROR;
 		return True;
 	}

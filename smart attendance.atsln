@@ -9,6 +9,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "pir test", "tests\pir test\
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "counter", "tests\counter\counter.cproj", "{76D6A298-71FF-438B-AB91-542BE61091E9}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "wifi test", "tests\wifi test\wifi test.cproj", "{CEAA3A6E-AC9F-4850-9BB4-AC83290936B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -31,6 +33,10 @@ Global
 		{76D6A298-71FF-438B-AB91-542BE61091E9}.Debug|AVR.Build.0 = Debug|AVR
 		{76D6A298-71FF-438B-AB91-542BE61091E9}.Release|AVR.ActiveCfg = Release|AVR
 		{76D6A298-71FF-438B-AB91-542BE61091E9}.Release|AVR.Build.0 = Release|AVR
+		{CEAA3A6E-AC9F-4850-9BB4-AC83290936B6}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CEAA3A6E-AC9F-4850-9BB4-AC83290936B6}.Debug|AVR.Build.0 = Debug|AVR
+		{CEAA3A6E-AC9F-4850-9BB4-AC83290936B6}.Release|AVR.ActiveCfg = Release|AVR
+		{CEAA3A6E-AC9F-4850-9BB4-AC83290936B6}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
