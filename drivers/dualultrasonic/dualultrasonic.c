@@ -27,7 +27,9 @@ void initDualUltraSonic(void){
 	
 	TCCR1B |= (1<<CS11); /* 1/8 Prescaler */
 	TIMSK1 |= (1<<TOIE1); /* Enable Overflow Int */
-	sei();				/* Enable Global interrupt */
+	TCNT1 =0;
+	//sei();				/* Enable Global interrupt */
+	
 }
 void readDistances(unsigned short*left,unsigned short*right){
 	char isLeftDone=0 , isRightDone =0;
