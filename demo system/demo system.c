@@ -23,6 +23,7 @@ volatile uint8_t isRight = 0x00;//right sensor flag
 volatile unsigned short audience = 0;//audience counter
 unsigned char buffer[50]; //used for debugging on softuart
 
+extern unsigned char wifiBuffer[WIFI_BUFFER_SIZE]; //wifi buffer 
 int main(void)
 {
 	//initialize softuart
@@ -32,9 +33,51 @@ int main(void)
 	_delay_ms(1000);
 	//initialize audience counter
 	initDualUltraSonic();
+	//init wifi chip
+	if(initWifi()==False)
+	{
+		softuart_puts("wifi intialization error...\n");
+		_delay_ms(1000);
+		softuart_puts(getLastError());
+		_delay_ms(1000);
+		return 1;
+	}
+	softuart_puts("connecting to network...\n");
+	if(connectToNetwork("oka","mid0sexy") ==False)
+	{
+		softuart_puts("network connection error\n");
+		_delay_ms(1000);
+		softuart_puts(getLastError());
+		_delay_ms(1000);
+		softuart_puts(wifiBuffer);
+		return 1;
+	}
+	softuart_puts("check Internet connection...\n");
+	if(checkInternet()==False)
+	{
+		softuart_puts("no internet access\n");
+		_delay_ms(1000);
+		softuart_puts(getLastError());
+		_delay_ms(1000);
+		return 1;
+	}
+	
+	softuart_puts("update data...\n");
+	if(updateData(data)==False)
+	{
+		softuart_puts("data update error\n");
+		_delay_ms(1000);
+		softuart_puts(getLastError());
+		_delay_ms(1000);
+		return 1;
+	}
+	softuart_puts("new data updated succeffully...\n");
+	
 	//system led
 	DDRB |= (1<<PB0);
 	PORTB |= (1<<PB0);
+	
+	unsigned int wifiTimer = 0;
 	while(1)
 	{
 		/************************************************************************/
@@ -73,6 +116,25 @@ int main(void)
 		sprintf(buffer,"L : %d , R : %d , audience : %d \n\0",leftDistance,rightDistance,audience);
 		putsUsart0(buffer);
 		
+		/************************************************************************/
+		/* update audience count for online use                                 */
+		/************************************************************************/
+		
+		if(wifiTimer == 60 )//update each minute as loop has 1 sec delay below
+		{
+			softuart_puts("update data...\n");
+			if(updateData(data)==False )
+			{
+				softuart_puts("data update error\n");
+				_delay_ms(1000);
+				softuart_puts(getLastError());
+				_delay_ms(1000);
+				return 1;
+			}
+			softuart_puts("new data updated succeffully...\n");
+			wifiTimer =0;
+		}
+		wifiTimer++;
 		
 		//blink system led
 		PORTB |= (1<<PB0);
