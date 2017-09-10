@@ -22,11 +22,11 @@ void turnLight()
 {
 	if(currentState==0x01)
 	{
-		putsUsart0("Already on... \n");
+		//putsUsart0("Already on... \n");
 	}
 	else
 	{
-		putsUsart0("Turn Light on ...\n");
+		//putsUsart0("Turn Light on ...\n");
 		Light_PORT |= (1<<Light_PIN);
 		currentState =0x01;
 	}
