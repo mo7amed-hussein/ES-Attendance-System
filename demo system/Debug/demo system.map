@@ -1,0 +1,875 @@
+Archive member included because of file (symbol)
+
+E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+                              demo system.o (initDualUltraSonic)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+                              demo system.o (initPir)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                              demo system.o (initRfid)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o) (initSpiMaster)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+                              demo system.o (softuart_init)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+                              demo system.o (putsUsart0)
+E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                              demo system.o (initWifi)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__ltsf2)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__divsf3)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__fixunssfsi)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__floatunsisf)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_inf)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_nan)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscA)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscB)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o) (__fp_round)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_split3)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__gtsf2)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__mulsf3)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o) (__mulsi3)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o) (__udivmodsi4)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o (exit)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              demo system.o (__do_copy_data)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              demo system.o (__do_clear_bss)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o) (memcpy)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o) (memset)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strlen.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o) (strlen)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strstr.o)
+                              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o) (strstr)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                              demo system.o (sprintf)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (vfprintf)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (__prologue_saves__)
+e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                              e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+tmp                 0x32              E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+wifiBuffer          0x64              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+wifiErrorStr        0x14              E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+buffer              0x32              demo system.o
+tmpSerial           0xc               demo system.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .text          0x00000000        0x0 demo system.o
+ .bss           0x00000000        0x0 demo system.o
+ .data.serials  0x00000000        0x0 demo system.o
+ .data.serialsCount
+                0x00000000        0x0 demo system.o
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+ .data          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+ .data          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .bss._rfidError
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .rodata.C.4.1427
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .rodata.C.3.1426
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .text.runSelfTest
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ COMMON         0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+ .data          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+ .text.initSpiSlave
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .data          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.idle     0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_turn_rx_on
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_turn_rx_off
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_getchar
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_kbhit
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_flush_input_buffer
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_transmit_busy
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_putchar
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_puts
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_puts_p
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.qout      0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+ .data          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+ .text.getcUsart0
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+ .text          0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ .bss           0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ .data.wifi_response_noAP
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ .data.wifi_response_ALRY_CONN
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ .text.getLastError
+                0x00000000        0x0 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text.avr-libc
+                0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strlen.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strlen.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strlen.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strstr.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strstr.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strstr.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+LOAD demo system.o
+START GROUP
+LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD E:\my projects\smart college\drivers\Debug\libdrivers.a
+END GROUP
+LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x33a8
+ *(.vectors)
+ .vectors       0x00000000       0x68 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.main     0x000000a6      0x3fc demo system.o
+                0x000000a6                main
+ .text.initDualUltraSonic
+                0x000004a2       0x86 E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+                0x000004a2                initDualUltraSonic
+ .text.readDistances
+                0x00000528      0x35c E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+                0x00000528                readDistances
+ .text.__vector_13
+                0x00000884       0x3a E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+                0x00000884                __vector_13
+ .text.initPir  0x000008be       0x4e E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+                0x000008be                initPir
+ .text.turnLight
+                0x0000090c       0x2a E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+                0x0000090c                turnLight
+ .text.__vector_5
+                0x00000936       0x5e E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+                0x00000936                __vector_5
+ .text.initRfid
+                0x00000994      0x182 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000994                initRfid
+ .text.writeToReg
+                0x00000b16       0x4a E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000b16                writeToReg
+ .text.readFromReg
+                0x00000b60       0x50 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000b60                readFromReg
+ .text.resetRfid
+                0x00000bb0       0x16 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000bb0                resetRfid
+ .text.getFirmwareVer
+                0x00000bc6       0x1c E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000bc6                getFirmwareVer
+ .text.setRegBits
+                0x00000be2       0x34 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000be2                setRegBits
+ .text.clearRegBits
+                0x00000c16       0x38 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000c16                clearRegBits
+ .text.sendTagCommand
+                0x00000c4e      0x310 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000c4e                sendTagCommand
+ .text.scanForTag
+                0x00000f5e       0x82 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000f5e                scanForTag
+ .text.calculateCRC
+                0x00000fe0       0xd8 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00000fe0                calculateCRC
+ .text.haltTag  0x000010b8       0x7c E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x000010b8                haltTag
+ .text.antiCollision
+                0x00001134       0xe8 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x00001134                antiCollision
+ .text.dumpSerial
+                0x0000121c      0x128 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+                0x0000121c                dumpSerial
+ .text.initSpiMaster
+                0x00001344       0x40 E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+                0x00001344                initSpiMaster
+ .text.tranceiveSpi
+                0x00001384       0x2e E:\my projects\smart college\drivers\Debug\libdrivers.a(spi.o)
+                0x00001384                tranceiveSpi
+ .text.__vector_14
+                0x000013b2      0x1b4 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+                0x000013b2                __vector_14
+ .text.io_init  0x00001566       0x2a E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.timer_init
+                0x00001590       0x50 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .text.softuart_init
+                0x000015e0       0x30 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+                0x000015e0                softuart_init
+ .text.initUsart0
+                0x00001610       0xa0 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+                0x00001610                initUsart0
+ .text.putcUsart0
+                0x000016b0       0x2e E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+                0x000016b0                putcUsart0
+ .text.putsUsart0
+                0x000016de       0x56 E:\my projects\smart college\drivers\Debug\libdrivers.a(usart0.o)
+                0x000016de                putsUsart0
+ .text.initWifi
+                0x00001734       0x58 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00001734                initWifi
+ .text.checkHW  0x0000178c      0x152 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x0000178c                checkHW
+ .text.flushBuffer
+                0x000018de       0x28 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x000018de                flushBuffer
+ .text.disableEcho
+                0x00001906      0x152 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00001906                disableEcho
+ .text.setClientMode
+                0x00001a58      0x168 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00001a58                setClientMode
+ .text.connectToNetwork
+                0x00001bc0      0x72e E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00001bc0                connectToNetwork
+ .text.connectHost
+                0x000022ee      0x17a E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x000022ee                connectHost
+ .text.initDataSend
+                0x00002468      0x1a4 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00002468                initDataSend
+ .text.updateData
+                0x0000260c      0x248 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x0000260c                updateData
+ .text.checkInternet
+                0x00002854      0x168 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00002854                checkInternet
+ .text.avr-libc.fplib
+                0x000029bc        0x8 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x000029bc                __lesf2
+                0x000029bc                __nesf2
+                0x000029bc                __eqsf2
+                0x000029bc                __cmpsf2
+                0x000029bc                __ltsf2
+ .text.avr-libc.fplib
+                0x000029c4        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x000029c4                __divsf3
+ .text.avr-libc.fplib
+                0x000029c8       0xcc e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x000029de                __divsf3x
+                0x000029e2                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00002a94       0x58 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00002a94                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00002aec       0x7a e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00002af0                __floatsisf
+                0x00002aec                __floatunsisf
+ .text.avr-libc.fplib
+                0x00002b66       0x48 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00002b66                __fp_cmp
+ .text.avr-libc.fplib
+                0x00002bae        0xc e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00002bae                __fp_inf
+ .text.avr-libc.fplib
+                0x00002bba        0x6 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00002bba                __fp_nan
+ .text.avr-libc.fplib
+                0x00002bc0        0xe e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00002bc0                __fp_pscA
+ .text.avr-libc.fplib
+                0x00002bce        0xe e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00002bce                __fp_pscB
+ .text.avr-libc.fplib
+                0x00002bdc       0x22 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00002bdc                __fp_round
+ .text.avr-libc.fplib
+                0x00002bfe       0x44 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00002bfe                __fp_split3
+                0x00002c0e                __fp_splitA
+ .text.avr-libc.fplib
+                0x00002c42        0xe e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00002c42                __fp_zero
+                0x00002c44                __fp_szero
+ .text.avr-libc.fplib
+                0x00002c50        0x8 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x00002c50                __gtsf2
+                0x00002c50                __gesf2
+ .text.avr-libc.fplib
+                0x00002c58        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x00002c58                __mulsf3
+ .text.avr-libc.fplib
+                0x00002c5c       0xc2 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00002c74                __mulsf3_pse
+                0x00002c70                __mulsf3x
+ .text.libgcc   0x00002d1e       0x3e e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00002d1e                __mulsi3
+ .text.libgcc   0x00002d5c       0x44 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002d5c                __udivmodsi4
+ .text.avr-libc
+                0x00002da0        0xe e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x00002da0                memset
+ .text.avr-libc
+                0x00002dae       0x12 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strlen.o)
+                0x00002dae                strlen
+ .text.avr-libc
+                0x00002dc0       0x34 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strstr.o)
+                0x00002dc0                strstr
+ .text.avr-libc
+                0x00002df4       0x48 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00002df4                sprintf
+ .text.avr-libc
+                0x00002e3c      0x3ba e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00002e3c                vfprintf
+ .text.avr-libc
+                0x000031f6       0x16 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x000031f6                strnlen_P
+ .text.avr-libc
+                0x0000320c       0x16 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000320c                strnlen
+ .text.avr-libc
+                0x00003222       0x58 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00003222                fputc
+ .text.avr-libc
+                0x0000327a       0xbc e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x0000327a                __ultoa_invert
+ .text.libgcc   0x00003336       0x38 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00003336                __prologue_saves__
+ .text.libgcc   0x0000336e       0x36 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x0000336e                __epilogue_restores__
+                0x000033a4                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000033a4        0x0 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000033a4                exit
+                0x000033a4                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000033a4        0x4 e:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000033a8                _etext = .
+
+.data           0x00800100      0x21c load address 0x000033a8
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100       0x61 demo system.o
+ .data          0x00800161        0x4 E:\my projects\smart college\drivers\Debug\libdrivers.a(rfid.o)
+ .data          0x00800165      0x1a5 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+ *(.data*)
+ .data.wifi_response_OK
+                0x0080030a        0x3 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x0080030a                wifi_response_OK
+ .data.data_updated_res
+                0x0080030d        0x5 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x0080030d                data_updated_res
+ .data.wifi_response_CONN
+                0x00800312        0x8 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00800312                wifi_response_CONN
+ .data.wifi_ping_timeout
+                0x0080031a        0x2 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x0080031a                wifi_ping_timeout
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080031c                . = ALIGN (0x2)
+                0x0080031c                _edata = .
+                0x0080031c                PROVIDE (__data_end, .)
+
+.bss            0x0080031c       0xf0
+                0x0080031c                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.leftDistance
+                0x0080031c        0x2 demo system.o
+                0x0080031c                leftDistance
+ .bss.rightDistance
+                0x0080031e        0x2 demo system.o
+                0x0080031e                rightDistance
+ .bss.isLeft    0x00800320        0x1 demo system.o
+                0x00800320                isLeft
+ .bss.isRight   0x00800321        0x1 demo system.o
+                0x00800321                isRight
+ .bss.audience  0x00800322        0x2 demo system.o
+                0x00800322                audience
+ .bss.overflows
+                0x00800324        0x2 E:\my projects\smart college\drivers\Debug\libdrivers.a(dualultrasonic.o)
+                0x00800324                overflows
+ .bss.currentState
+                0x00800326        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(pir.o)
+                0x00800326                currentState
+ .bss.internal_rx_buffer.1364
+                0x00800327        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.bits_left_in_rx.1363
+                0x00800328        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.timer_rx_ctr.1362
+                0x00800329        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.rx_mask.1361
+                0x0080032a        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.flag_rx_waiting_for_stop_bit.1360
+                0x0080032b        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.inbuf     0x0080032c       0x20 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.qin       0x0080034c        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.flag_rx_off
+                0x0080034d        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.flag_rx_ready
+                0x0080034e        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.flag_tx_busy
+                0x0080034f        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.timer_tx_ctr
+                0x00800350        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.bits_left_in_tx
+                0x00800351        0x1 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss.internal_tx_buffer
+                0x00800352        0x2 E:\my projects\smart college\drivers\Debug\libdrivers.a(softuart.o)
+ .bss._wifiError
+                0x00800354        0x2 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00800354                _wifiError
+ *(COMMON)
+ COMMON         0x00800356       0x3e demo system.o
+                0x00800356                buffer
+                0x00800388                tmpSerial
+ COMMON         0x00800394       0x78 E:\my projects\smart college\drivers\Debug\libdrivers.a(wifi.o)
+                0x00800394                wifiBuffer
+                0x008003f8                wifiErrorStr
+                0x0080040c                PROVIDE (__bss_end, .)
+                0x000033a8                __data_load_start = LOADADDR (.data)
+                0x000035c4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080040c        0x0
+                0x0080040c                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080040c                PROVIDE (__noinit_end, .)
+                0x0080040c                _end = .
+                0x0080040c                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 demo system.o
+
+.debug_pubnames
+                0x00000000       0x98
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x98 demo system.o
+
+.debug_info     0x00000000      0x708
+ *(.debug_info)
+ .debug_info    0x00000000      0x708 demo system.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x16d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x16d demo system.o
+
+.debug_line     0x00000000      0x4a4
+ *(.debug_line)
+ .debug_line    0x00000000      0x4a4 demo system.o
+
+.debug_frame    0x00000000       0x20
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 demo system.o
+
+.debug_str      0x00000000      0x17e
+ *(.debug_str)
+ .debug_str     0x00000000      0x17e demo system.o
+                                0x1b7 (size before relaxing)
+
+.debug_loc      0x00000000      0x421
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x421 demo system.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(demo system.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x60
+ .debug_ranges  0x00000000       0x60 demo system.o
