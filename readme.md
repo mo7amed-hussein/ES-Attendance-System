@@ -2,13 +2,13 @@
 
 Overview
 ======== 
-*This smart audience system has the following features :
+- This smart audience system has the following features :
 	* counting poeple passing through door 
 	* send current count tobe stored online
 	* human motion detection could be used to tigger lights ... etc.
 	* access control via rfid
 	
-*Main Used Hardware	
+- Main Used Hardware	
 	* Atmega328 microcontroller
 	* hc-s104 ultrasonic sonsor
 	* hc-s501 PIR motion detector
